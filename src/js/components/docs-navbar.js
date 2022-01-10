@@ -3,8 +3,10 @@ Vue.component("docs-navbar", {
         <nav class="at-navbar">
             <div class="at-u-container">
                 <div class="at-navbar-logo-container">
-                    <img src="/src/assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>
-                    <img src="/src/assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>
+                    <a href="/src/">
+                        <img src="/src/assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>
+                        <img src="/src/assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>
+                    </a>
                 </div>
                 <div class="at-navbar-items">
                     <a  href="/src/"><div class="at-navbar-item" :at-active="(active == 'home')" >Home</div></a>

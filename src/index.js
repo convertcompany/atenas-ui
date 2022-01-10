@@ -3,7 +3,7 @@ const app = new Vue({
     data : () => {
         return{
             system : {
-                darkmode : true,
+                darkmode : false,
                 sidebanner_compacted : false,
                 codes : codes,
                 showmodal : false
@@ -45,9 +45,19 @@ function copyCodeToClipboard(x){
 
 function appInit(){
     const dark = window.localStorage.getItem("darkmode");
-    console.log(dark)
     if ( dark != undefined ){
         app.system.darkmode = ( dark == "true" );
+        if ( app.system.darkmode ){
+            document.querySelector("body").setAttribute("at-dark", "true")
+        } else {
+            document.querySelector("body").removeAttribute("at-dark")
+        }
+    } else {
+        if ( app.system.darkmode ){
+            document.querySelector("body").setAttribute("at-dark", "true")
+        } else {
+            document.querySelector("body").removeAttribute("at-dark")
+        }
     }
 }
 
