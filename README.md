@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://convertcompany.com/">
+  <a href="https://convertcompany.com.br/">
     <img src="docs/icon-light.png" alt="Atenas" width="180">
   </a>
 </p>
