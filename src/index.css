@@ -380,3 +380,9 @@ h1{
 .font-string{
     color: rgb(255, 234, 118);
 }
+
+#animation-404{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
