@@ -38,5 +38,5 @@ O Atenas UI é um framework de UI desenvolvido pela Convert® Company, seguindo 
 - Email - [dev@convertcompany.com.br](mailto:dev@convertcompany.com.br)
 
 ## 🇧🇷 Feito no Brasil
-Copyright© - Convert Company 2022  
+#### Copyright© - Convert Company 2022  
 <sub>Titanium Tower, Sala 801 - Passo Fundo, RS - Brasil</sub>
