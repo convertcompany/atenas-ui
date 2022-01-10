@@ -14,5 +14,17 @@
   <br>
 </p>
 
-## Começando com Atenas
+## 🚀 Começando com Atenas
 Para adicionar o atenas ao seu projeto é muito simples, você pode seguir as seguintes maneiras :
+
+- [Download da ultima versão](https://atenas.convert.app.br/latest)
+- Clonar o repositório: `git clone https://github.com/convertcompany/atenas-ui.git`
+
+## 🛠 Build customizado
+Você pode fazer o seu proprio build do atenas, para isso é necessário seguir os seguintes passos :
+- Clonar o repositório: `git clone https://github.com/convertcompany/atenas-ui.git`
+- Instalar o pacote do less com `npm install`
+- Acessar o source atenas-ui.less e realizar as modificações desejadas.
+- Executar o build com `npm run build`
+- O passo anterior irá exportar o arquivo novo na pasta dist/
+- Pronto!
