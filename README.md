@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://convertcompany.com/">
-    <img src="docs/icon-light.png" alt="Atenas" width="200" height="165">
+    <img src="docs/icon-light.png" alt="Atenas" width="180">
   </a>
 </p>
 
