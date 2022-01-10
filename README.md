@@ -34,6 +34,9 @@ Você pode fazer o seu proprio build do atenas, para isso é necessário seguir 
 - O passo anterior irá exportar os arquivos novos na pasta dist/
 - Pronto!
 
+## 😎 Feito com Atenas
+- [Extensão Convert Click2Call](https://chrome.google.com/webstore/detail/convert-click2call/ibknofmdcbgmgadmdidenjifmphdjkog?hl=pt-br)
+
 ## ⚡️ O Projeto Atenas
 O Atenas UI é um framework de UI desenvolvido pela Convert® Company, seguindo as regras do design system Convert®, e é distribuido gratuitamente para uso, saiba mais sobre nossa empresa :
 
