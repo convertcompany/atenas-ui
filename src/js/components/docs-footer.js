@@ -55,7 +55,7 @@ Vue.component("docs-footer", {
                 <img src="/src/assets/logo-dark.svg" style="width: 150px;">
                 <div class="at-u-flex-grow" at-right>
                     <b at-tx="white">Atenas UI</b><br>
-                    <small at-tx="transparent-white">Todos os direitos reservados | convert® company</small>
+                    <small at-tx="transparent-white">Todos os direitos reservados · convert® company</small>
                 </div>
             </div>
         </div>
