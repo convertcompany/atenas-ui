@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../../src/assets/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
         <link rel="stylesheet" href="../../css/vendors/dracula.min.css">
         <link rel="stylesheet" href="../../dist/atenas-ui.min.css">
@@ -17,8 +17,8 @@
             <nav class="at-navbar" id="navbar-home">
                 <div class="at-u-container">
                     <div class="at-navbar-logo-container">
-                        <img src="../../../assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>
-                        <img src="../../../assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>
+                        <img src="../../../src/assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>
+                        <img src="../../../src/assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>
                     </div>
                 </div>
             </nav>
@@ -27,8 +27,8 @@
                     <div class="at-hero" id="hero-home" at-bg="white" data-navbar-mode="light">
                         <div class="at-hero-content" at-size="fullscreen" data-navbar-mode="light">
                             <div class="at-u-col-6 at-u-p4" data-navbar-mode="light">
-                                <!-- <lottie-player autoplay loop src="https://assets10.lottiefiles.com/packages/lf20_toofqbxc.json"></lottie-player> -->
-                                <img src="../assets/3d-rocket.png" id="img-rocket" data-navbar-mode="light">
+                                <!-- <lottie-player autoplay loop src="https://src/assets10.lottiefiles.com/packages/lf20_toofqbxc.json"></lottie-player> -->
+                                <img src="../src/assets/3d-rocket.png" id="img-rocket" data-navbar-mode="light">
                             </div>
                             <div class="at-u-col-6 at-u-p1 at-u-pr3" data-navbar-mode="light">
                                 <h1 data-navbar-mode="light">Framework moderno e responsivo</h1>
@@ -46,7 +46,7 @@
                                 <button data-navbar-mode="dark" class="at-button at-u-mt3"  at-bg="primary" at-shadow="primary">Quero conhecer!</button>
                             </div>
                             <div class="at-u-col-7 at-u-p2" data-navbar-mode="dark">
-                                <lottie-player data-navbar-mode="dark" autoplay loop src="https://assets10.lottiefiles.com/packages/lf20_toofqbxc.json"></lottie-player>
+                                <lottie-player data-navbar-mode="dark" autoplay loop src="./assets/animations/person.json"></lottie-player>
                             </div>
                         </div>
                     </div>
@@ -65,14 +65,14 @@
                                     <p at-tx="transparent-white">Personalize seu próprio tema de cores, estilos de fonte, e muito mais com as variáveis do atenas</p>
                                     <a target="_blank" href="./css/#theme"><button class="at-button at-u-my3" at-bg="primary" at-shadow="primary">Como crio meu tema?</button></a>
                                 </div>
-                                <lottie-player data-navbar-mode="light" id="adjust-animation" autoplay loop src="https://assets2.lottiefiles.com/packages/lf20_g3dzz0wz.json"></lottie-player>
+                                <lottie-player data-navbar-mode="light" id="adjust-animation" autoplay loop src="./assets/animations/global.json"></lottie-player>
                             </div>
                         </div>
                     </div>
                     <div class="at-hero at-u-relative" style="overflow: hidden;background-color: var(--at-slate-100) !important;" id="hero-start" data-navbar-mode="light">
                         <div class="at-hero-content mobile-invert" at-size="small" data-navbar-mode="light">
                             <div class="at-u-col-6 at-u-p4" data-navbar-mode="light">
-                                <img src="../assets/3d-3.png" id="img-book" data-navbar-mode="light">
+                                <img src="../src/assets/3d-flag.png" id="img-book" data-navbar-mode="light">
                             </div>
                             <div class="at-u-col-5 at-u-p4" data-navbar-mode="light">
                                 <h1 at-tx="dark" data-navbar-mode="light">Comece agora mesmo!</h1>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="at-hero" style="background-color: var(--at-blue-500);">
                         <div class="at-hero-content" at-size="small" at-left>
-                            <img src="../../assets/logo-dark.svg" style="width: 150px;">
+                            <img src="../../src/assets/logo-dark.svg" style="width: 150px;">
                             <div class="at-u-flex-grow" at-right>
                                 <b at-tx="white">Atenas UI</b><br>
                                 <small at-tx="transparent-white">Todos os direitos reservados | convert® company</small>
@@ -94,12 +94,12 @@
                 </div>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.5.4/dist/lottie-player.min.js"></script>
-        <script src="../../js/vendors/vue.min.js"></script>
-        <script src="../../js/components/docs-navbar.js"></script>
-        <script src="../../js/components/docs-footer.js"></script>
-        <script src="../../js/vendors/highlight.min.js"></script>
-        <script src="../../js/codes.js"></script>
+        <script src="../../src/js/vendors/vue.min.js"></script>
+        <script src="../../src/js/vendors/lottie-player.min.js"></script>
+        <script src="../../src/js/components/docs-navbar.js"></script>
+        <script src="../../src/js/components/docs-footer.js"></script>
+        <script src="../../src/js/vendors/highlight.min.js"></script>
+        <script src="../../src/js/codes.js"></script>
         <script src="../../src/index.js"></script>
         <script type="text/javascript">
             app.system.darkmode = false;

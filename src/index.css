@@ -181,14 +181,14 @@ body{
 }
 
 .custom-bg-1{
-    background: url("../../../assets/gradient-bg-1.png") !important;
+    background: url("../../../src/assets/gradient-bg-1.png") !important;
     background-repeat: no-repeat;
     background-position: right;
     border-radius: 12px;
 }
 
 .custom-bg-2{
-    background: url("../../../assets/gradient-bg-2.png") !important;
+    background: url("../../../src/assets/gradient-bg-2.png") !important;
     background-repeat: no-repeat !important;
     background-size: 100%;
     border-radius: 12px;
