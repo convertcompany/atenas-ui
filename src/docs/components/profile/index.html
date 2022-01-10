@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../../../../src/assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../../../../src/index.css">
+        <title>Profile | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="buttons" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-12">
+                                        <a href="../../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Profile</h2>
+                                        <p>O elemento profile serve para organizar o layout de um perfil, conta com avatar, mockups caso não houver foto, e pode receber modificadores globais</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.profile}}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="at-u-flex at-u-my3">
+                                    <div class="at-u-col-12">
+                                        <h2>Resultado</h2>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p3" at-left>
+                                                <div class="at-u-flex">
+                                                    <div class="at-u-pr4">
+                                                        <div class="at-profile">
+                                                            <div class="at-profile-avatar">
+                                                                <img src="../../../../../../src/assets/avatar.png">
+                                                            </div>
+                                                            <div class="at-profile-info">
+                                                                <b>Gabriel Herrmann Leite</b>
+                                                                <p>Developer at Convert Company</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="at-u-pr4">
+                                                        <div class="at-profile">
+                                                            <div class="at-profile-avatar" at-profile-mockup="GL" at-bg="primary"></div>
+                                                            <div class="at-profile-info">
+                                                                <b>Gabriel Herrmann Leite</b> <div class="at-badge" at-bg="reverse-primary">Novo Cliente</div>
+                                                                <p>Developer at Convert Company</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../../../../src/js/vendors/vue.min.js"></script>
+        <script src="../../../../../../src/js/components/docs-navbar.js"></script>
+        <script src="../../../../../../src/js/components/docs-footer.js"></script>
+        <script src="../../../../../../src/js/vendors/highlight.min.js"></script>
+        <script src="../../../../../../src/js/codes.js"></script>
+        <script src="../../../../../../atenas.js"></script>
+        <script src="../../../../../../src/index.js"></script>
+    </body>
+</html>

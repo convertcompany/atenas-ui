@@ -4,7 +4,7 @@ const codes = {
             `<!-- Carregando atenas remotamente via CDN -->\n`+
             `<link rel="stylesheet" type="text/css" href="https://cdn.convert.app.br/atenas.min.css"/>\n`+
             `<!-- Carregando atenas localmente -->\n`+
-            `<link rel="stylesheet" type="text/css" href="../css/atenas.min.css"/>`,
+            `<link rel="stylesheet" type="text/css" href="../../css/atenas.min.css"/>`,
         extra : 
             `<!-- Carregando fonte Poppins via Google Fonts -->\n`+
             `<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>\n`+
@@ -305,6 +305,7 @@ const codes = {
         `    --at-title-color : #112233; <div class="badge-circle-color" style="background: #112233;"></div>\n`+
         `    --at-subtitle-color : #95A7B8; <div class="badge-circle-color" style="background: #95A7B8;"></div>\n`+
         `    --at-font-size : <span class='font-cyan'>14</span><span class='font-pink'>px</span>;\n`+
+        `    --at-font-family : <span class='font-string'>"Poppins"</span>;\n`+
         `    --at-primary-400 : <span at-tx="cyan">var</span>(--at-blue-400); <div class="badge-circle-color" style="background: #60A5FA;"></div>\n`+
         `    --at-primary-500 : <span at-tx="cyan">var</span>(--at-blue-500); <div class="badge-circle-color" style="background: #1A72FF;"></div>\n`+
         `    --at-primary-600 : <span at-tx="cyan">var</span>(--at-blue-600); <div class="badge-circle-color" style="background: #2563EB;"></div>\n`+
@@ -373,7 +374,7 @@ const codes = {
             `<div class="at-u-flex">\n`+
             `    <div class="at-u-p1 at-u-col-4">\n`+
             `        <div class="at-card" at-shadow="small">\n`+
-            `            <img src="../../../src/assets/demo.jpeg" class="at-card-image">\n`+
+            `            <img src="../../../../../../src/assets/demo.jpeg" class="at-card-image">\n`+
             `            <h2>Imagem</h2>\n`+
             `            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>\n`+
             `        </div>\n`+
@@ -408,9 +409,9 @@ const codes = {
             normal : 
             `<div class="at-page">\n`+
             `    <div class="at-sidebar">\n`+
-            `        <img class="at-sidebar-logo" src="../../../src/assets/logo-dark.svg" at-show-dark></img>\n`+
-            `        <img class="at-sidebar-logo" src="../../../src/assets/logo-light.svg" at-hide-dark></img>\n`+
-            `        <img class="at-sidebar-logo-compact" src="../../../src/assets/icon.svg"></img>\n`+
+            `        <img class="at-sidebar-logo" src="../../../../../../src/assets/logo-dark.svg" at-show-dark></img>\n`+
+            `        <img class="at-sidebar-logo" src="../../../../../../src/assets/logo-light.svg" at-hide-dark></img>\n`+
+            `        <img class="at-sidebar-logo-compact" src="../../../../../../src/assets/icon.svg"></img>\n`+
             `        <div class="at-sidebar-items">\n`+
             `            <div class="at-sidebar-item" at-active><i class="bx bx-star"></i><span>Favoritos</span></div>\n`+
             `            <div class="at-sidebar-item"><i class="bx bx-category"></i><span>Dashboard</span></div>\n`+
@@ -452,8 +453,8 @@ const codes = {
             normal : `<nav class="at-navbar">\n`+
             `    <div class="at-u-container at-u-relative">\n`+
             `        <div class="at-navbar-logo-container">\n`+
-            `            <img src="../../../src/assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>\n`+
-            `            <img src="../../../src/assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>\n`+
+            `            <img src="../../../../../../src/assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>\n`+
+            `            <img src="../../../../../../src/assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>\n`+
             `        </div>\n`+
             `        <div class="at-navbar-items">\n`+
             `            <a  href="#"><div class="at-navbar-item">Instalação</div></a>\n`+
@@ -479,7 +480,7 @@ const codes = {
         `        <div class="at-u-col-6 at-u-px2">\n`+
         `            <h2 at-tx="white">Light glass</h2>\n`+
         `            <div class="at-card" at-glass="light" at-center>\n`+
-        `                <img src="../../../src/assets/emoji.png" class="at-u-my2">\n`+
+        `                <img src="../../../../../../src/assets/emoji.png" class="at-u-my2">\n`+
         `                <h1 at-tx="white">Sucesso!</h1>\n`+
         `                <p at-tx="transparent-white">Todas as tarefas foram realizadas, parabéns</p>\n`+
         `                <div class="at-u-m2">\n`+
@@ -491,7 +492,7 @@ const codes = {
         `        <div class="at-u-col-6 at-u-px2">\n`+
         `            <h2 at-tx="white">Dark Glass</h2>\n`+
         `            <div class="at-card" at-glass="dark" at-center>\n`+
-        `                <img src="../../../src/assets/emoji.png" class="at-u-my2">\n`+
+        `                <img src="../../../../../../src/assets/emoji.png" class="at-u-my2">\n`+
         `                <h1 at-tx="white">Sucesso!</h1>\n`+
         `                <p at-tx="transparent-white">Todas as tarefas foram realizadas, parabéns</p>\n`+
         `                <div class="at-u-m2">\n`+
@@ -682,7 +683,7 @@ const codes = {
         profile : 
         `<div class="at-profile">\n`+
         `    <div class="at-profile-avatar">\n`+
-        `        <img src="../../../src/assets/avatar.png">\n`+
+        `        <img src="../../../../../../src/assets/avatar.png">\n`+
         `    </div>\n`+
         `    <div class="at-profile-info">\n`+
         `        <b>Gabriel Herrmann Leite</b>\n`+

@@ -34,7 +34,7 @@
                                 <h1 data-navbar-mode="light">Framework moderno e responsivo</h1>
                                 <p data-navbar-mode="light">Utilize componentes prontos e utilitários de CSS para criar interfaces no design system próprio da convert® company </p>
                                 <a href="#interfaces"><button data-navbar-mode="light" class="at-button at-u-mt3 at-u-mr1">Continuar explorando</button></a>
-                                <a target="_blank" href="./installation/"><button data-navbar-mode="light" class="at-button at-u-mt3" at-bg="primary" at-shadow="primary">Começar Agora!</button></a>
+                                <a target="_blank" href="./docs/installation/"><button data-navbar-mode="light" class="at-button at-u-mt3" at-bg="primary" at-shadow="primary">Começar Agora!</button></a>
                             </div>
                         </div>
                     </div><br>
@@ -43,7 +43,7 @@
                             <div class="at-u-col-5 at-u-p4" data-navbar-mode="dark">
                                 <h1 data-navbar-mode="dark">Interfaces padronizadas</h1>
                                 <p data-navbar-mode="dark">Utilize componentes prontos e utilitários de CSS para criar interfaces no design system próprio da convert® company </p>
-                                <button data-navbar-mode="dark" class="at-button at-u-mt3"  at-bg="primary" at-shadow="primary">Quero conhecer!</button>
+                                <a target="_blank" href="./docs/installation/"><button data-navbar-mode="dark" class="at-button at-u-mt3"  at-bg="primary" at-shadow="primary">Quero conhecer!</button></a>
                             </div>
                             <div class="at-u-col-7 at-u-p2" data-navbar-mode="dark">
                                 <lottie-player data-navbar-mode="dark" autoplay loop src="./assets/animations/person.json"></lottie-player>
@@ -78,7 +78,7 @@
                                 <h1 at-tx="dark" data-navbar-mode="light">Comece agora mesmo!</h1>
                                 <p data-navbar-mode="light">O Atenas UI é desenvolvido pela Convert Company e distribuido gratuitamente para todos, e não permite revenda comercial</p>
                                 <a target="_blank" href="https://github.com/convertcompany/atenas-ui"><button data-navbar-mode="light" class="at-button at-u-mt3" at-tx="primary" at-border="small" at-bg="white" ><i class="bx bxl-github"></i>GitHub</button></a>
-                                <a target="_blank" href="./installation/"><button data-navbar-mode="light" class="at-button at-u-mt3" at-tx="white" at-bg="primary" >Adicionar ao meu projeto!</button></a>
+                                <a target="_blank" href="./docs/installation/"><button data-navbar-mode="light" class="at-button at-u-mt3" at-tx="white" at-bg="primary" >Adicionar ao meu projeto!</button></a>
                             </div>
                         </div>
                     </div>
@@ -104,11 +104,11 @@
         <script type="text/javascript">
             app.system.darkmode = false;
             document.querySelector(".at-page-container").addEventListener("scroll", function(e) {
-                if ( document.elementFromPoint((window.innerWidth - 20), 90)){
+                if ( document.elementFromPoint((window.innerWidth - 20), 70)){
                     if ( document.querySelector("#navbar-home").getAttribute("start") == ""){
                         document.querySelector("#navbar-home").removeAttribute("start")
                     }
-                    const mode = document.elementFromPoint((window.innerWidth - 20), 90).getAttribute("data-navbar-mode");
+                    const mode = document.elementFromPoint((window.innerWidth - 20), 70).getAttribute("data-navbar-mode");
                     if ( mode ){
                         if ( mode === "dark" ){
                             document.querySelector("#navbar-home").setAttribute("at-dark", "true")

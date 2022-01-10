@@ -7,28 +7,28 @@ Vue.component("docs-footer", {
                 <div class="at-u-flex at-u-col-12">
                     <div class="at-u-col-4">
                         <p class="at-u-semibold at-u-h4" at-tx="white">Instalando o Atenas UI</p>
-                        <a :href="path + '../installation#package'" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Pacote</a>
-                        <a :href="path + '../css#extra'" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Recursos sugeridos</a><br>
+                        <a href="/src/docs/installation#package" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Pacote</a>
+                        <a href="/src/docs/css#extra" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Recursos sugeridos</a><br>
                         <p class="at-u-semibold at-u-h4" at-tx="white">Customizando o Atenas UI</p>
-                        <a :href="path + '../css#darkmode'" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Darkmode</a>
-                        <a :href="path + '../css#colors'" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Cores</a>
+                        <a href="/src/docs/css#darkmode" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Darkmode</a>
+                        <a href="/src/docs/css#colors" at-tx="transparent-white" class="at-u-opacity-80 at-u-block">Cores</a>
                     </div>
                     <div class="at-u-col-4">
                         <p class="at-u-semibold at-u-h4" at-tx="white">Componentes</p>
-                        <a at-tx="transparent-white" :href="path + '../components/buttons/'" class="at-u-opacity-80 at-u-block">Botões</a>
-                        <a at-tx="transparent-white" :href="path + '../components/hero/'"class="at-u-opacity-80 at-u-block">Hero</a>
-                        <a at-tx="transparent-white" :href="path + '../components/cards/'"class="at-u-opacity-80 at-u-block">Cards</a>
-                        <a at-tx="transparent-white" :href="path + '../components/sidebar/'"class="at-u-opacity-80 at-u-block">Sidebar</a>
-                        <a at-tx="transparent-white" :href="path + '../components/navbar/'"class="at-u-opacity-80 at-u-block">Navbar</a>
-                        <a at-tx="transparent-white" :href="path + '../components/tables/'"class="at-u-opacity-80 at-u-block">Tabelas</a>
-                        <a at-tx="transparent-white" :href="path + '../components/alerts/'"class="at-u-opacity-80 at-u-block">Alertas</a>
-                        <a at-tx="transparent-white" :href="path + '../components/fields/'"class="at-u-opacity-80 at-u-block">Formulários</a>
-                        <a at-tx="transparent-white" :href="path + '../components/modal/'"class="at-u-opacity-80 at-u-block">Modal</a>
-                        <a at-tx="transparent-white" :href="path + '../components/lists/'"class="at-u-opacity-80 at-u-block">Listas</a>
-                        <a at-tx="transparent-white" :href="path + '../components/keys/'"class="at-u-opacity-80 at-u-block">Teclas</a>
-                        <a at-tx="transparent-white" :href="path + '../components/glass/'"class="at-u-opacity-80 at-u-block">Glassmorphism</a>
-                        <a at-tx="transparent-white" :href="path + '../components/badges/'"class="at-u-opacity-80 at-u-block">Badge</a>
-                        <a at-tx="transparent-white" :href="path + '../components/profile/'"class="at-u-opacity-80 at-u-block">Perfil</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/buttons/" class="at-u-opacity-80 at-u-block">Botões</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/hero/"class="at-u-opacity-80 at-u-block">Hero</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/cards/"class="at-u-opacity-80 at-u-block">Cards</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/sidebar/"class="at-u-opacity-80 at-u-block">Sidebar</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/navbar/"class="at-u-opacity-80 at-u-block">Navbar</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/tables/"class="at-u-opacity-80 at-u-block">Tabelas</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/alerts/"class="at-u-opacity-80 at-u-block">Alertas</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/fields/"class="at-u-opacity-80 at-u-block">Formulários</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/modal/"class="at-u-opacity-80 at-u-block">Modal</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/lists/"class="at-u-opacity-80 at-u-block">Listas</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/keys/"class="at-u-opacity-80 at-u-block">Teclas</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/glass/"class="at-u-opacity-80 at-u-block">Glassmorphism</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/badges/"class="at-u-opacity-80 at-u-block">Badge</a>
+                        <a at-tx="transparent-white" href="/src/docs/components/profile/"class="at-u-opacity-80 at-u-block">Perfil</a>
                     </div>
                     <div class="at-u-col-4">
                         <p class="at-u-semibold at-u-h4" at-tx="white">Layout / Utils</p>
@@ -52,7 +52,7 @@ Vue.component("docs-footer", {
         </div>
         <div class="at-hero" style="background-color: var(--at-blue-700);">
             <div class="at-hero-content" at-size="small" at-left>
-                <img :src="path+'../../src/assets/logo-dark.svg'" style="width: 150px;">
+                <img src="/src/assets/logo-dark.svg" style="width: 150px;">
                 <div class="at-u-flex-grow" at-right>
                     <b at-tx="white">Atenas UI</b><br>
                     <small at-tx="transparent-white">Todos os direitos reservados | convert® company</small>

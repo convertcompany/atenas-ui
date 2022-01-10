@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../../../../src/assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../../../../src/index.css">
+        <title>Navbar | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="normal" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-12">
+                                        <a href="../../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Navbar</h2>
+                                        <p>Adicione um header de navegação a sua interface, com o seguinte código abaixo</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.navbar.normal}}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="at-u-flex at-u-my3">
+                                    <div class="at-u-col-12">
+                                        <h2>Resultado</h2>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-relative"> 
+                                                <nav class="at-navbar" style="position: absolute !important;">
+                                                    <div class="at-u-container at-u-relative">
+                                                        <div class="at-navbar-logo-container">
+                                                            <img src="../../../../../../src/assets/logo-light.svg" class="at-navbar-logo" at-hide-dark>
+                                                            <img src="../../../../../../src/assets/logo-dark.svg" class="at-navbar-logo" at-show-dark>
+                                                        </div>
+                                                        <div class="at-navbar-items">
+                                                            <a  href="#"><div class="at-navbar-item">Instalação</div></a>
+                                                            <a  href="#"><div class="at-navbar-item">CSS</div></a>
+                                                            <a  href="#"><div class="at-navbar-item" at-active>Components</div></a>
+                                                            <a  href="#"><div class="at-navbar-item">Layout</div></a>
+                                                            <div class="at-navbar-item navbar-icon" @click="( system.darkmode = !system.darkmode )"><i :class="(system.darkmode) ? 'bx bxs-moon' : 'bx bxs-sun'"></i></div>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                                <div class="at-page page-demo">
+                                                    <div class="at-page-content">
+                                                        <div class="at-u-p1">
+                                                            <h1>Components</h1>
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consequuntur facere, repudiandae provident quae repellendus, quam vitae, harum porro iusto delectus quo magnam eius excepturi dolore dolores fugiat debitis reprehenderit?</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../../../../src/js/vendors/vue.min.js"></script>
+        <script src="../../../../../../atenas.js"></script>
+        <script src="../../../../../../src/js/components/docs-navbar.js"></script>
+        <script src="../../../../../../src/js/components/docs-footer.js"></script>
+        <script src="../../../../../../src/js/vendors/highlight.min.js"></script>
+        <script src="../../../../../../src/js/codes.js"></script>
+        <script src="../../../../../../src/index.js"></script>
+    </body>
+</html>
