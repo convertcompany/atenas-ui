@@ -32,15 +32,14 @@ Você pode fazer o seu proprio build do atenas, para isso é necessário seguir 
 ## ⚡️ O Projeto Atenas
 O Atenas UI é um framework de UI desenvolvido pela Convert® Company, seguindo as regras do design system Convert®, e é distribuido gratuitamente para uso, saiba mais sobre nossa empresa :
 
-### [🌍 Convert Company](https://convertcompany.com.br)
+#### [🌍 Convert Company](https://convertcompany.com.br)
 - Telefone - [+55 54 2103700](tel://+555421037000)  
 - WhatsApp - [+55 54 2103700](https://wa.me/555421037000)  
 - Email - [dev@convertcompany.com.br](mailto:dev@convertcompany.com.br)
 
-<hr>
-<h3 align="center">🇧🇷 Feito no Brasil</h3>
-
+---
+<h4 align="center">🇧🇷 Feito no Brasil</h4>
 <p align="center">
     Copyright© - Convert Company 2022
-    <small>Titanium Tower, Sala 801 - Passo Fundo, RS - Brasil</small>
 </p>
+<small align="center">Titanium Tower, Sala 801 - Passo Fundo, RS - Brasil</small>
