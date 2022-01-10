@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/convertcompany/atenas-ui/issues"
   },
-  "homepage": "https://github.com/convertcompany/atenas-ui#readme"
+  "homepage": "https://github.com/convertcompany/atenas-ui#readme",
+  "devDependencies": {
+    "less": "^4.1.2"
+  }
 }
