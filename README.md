@@ -26,14 +26,14 @@ Você pode fazer o seu proprio build do atenas, para isso é necessário seguir 
 - Instalar o pacote do less com `npm install`
 - Acessar o source atenas-ui.less e realizar as modificações desejadas.
 - Executar o build com `npm run build`
-- O passo anterior irá exportar o arquivo novo na pasta dist/
+- O passo anterior irá exportar os arquivos novos na pasta dist/
 - Pronto!
 
 ## ⚡️ O Projeto Atenas
 O Atenas UI é um framework de UI desenvolvido pela Convert® Company, seguindo as regras do design system Convert®, e é distribuido gratuitamente para uso, saiba mais sobre nossa empresa :
 
 #### [🌍 Convert Company](https://convertcompany.com.br)
-- Telefone - [+55 54 2103700](tel://+555421037000)  
+- Telefone - [+55 54 2103700](callto:+555421037000)  
 - WhatsApp - [+55 54 2103700](https://wa.me/555421037000)  
 - Email - [dev@convertcompany.com.br](mailto:dev@convertcompany.com.br)
 
