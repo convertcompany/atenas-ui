@@ -9,20 +9,20 @@
 <p align="center">
   Framework de Componentes do design system Convert Company, Open Source
   <br>
-  <a href="https://convertcompany.com/atenas"><strong>Explorar Documentação »</strong></a>
+  <a href="https://atenas.convert.app.br/docs/installation"><strong>Explorar Documentação »</strong></a>
   <br>
   <br>
-  <a href="https://atenas.convert.app.br/components">Componentes</a>
+  <a href="https://atenas.convert.app.br/docs/components">Componentes</a>
   ·
-  <a href="https://atenas.convert.app.br/css">Tema</a>
+  <a href="https://atenas.convert.app.br/docs/css">Tema</a>
   ·
-  <a href="https://atenas.convert.app.br/layout">Utils</a>
+  <a href="https://atenas.convert.app.br/docs/layout">Utils</a>
 </p>
 
 ## 🚀 Começando com Atenas
 Para adicionar o atenas ao seu projeto é muito simples, você pode seguir as seguintes maneiras :
 
-- [Download da ultima versão](https://atenas.convert.app.br/latest)
+- [Download da ultima versão](https://atenas.convert.app.br/docs/installation/#download)
 - Clonar o repositório: `git clone https://github.com/convertcompany/atenas-ui.git`
 
 ## 🛠 Build customizado
@@ -33,6 +33,13 @@ Você pode fazer o seu proprio build do atenas, para isso é necessário seguir 
 - Executar o build com `npm run build`
 - O passo anterior irá exportar os arquivos novos na pasta dist/
 - Pronto!
+
+## 📚 Docs
+- [Instalar](https://atenas.convert.app.br/docs/installation)
+- [Customizar Tema](https://atenas.convert.app.br/docs/css/#theme)
+- [Modo Dark](https://atenas.convert.app.br/docs/css/#darkmode)
+- [Components](https://atenas.convert.app.br/docs/components)
+- [Layout / Utils](https://atenas.convert.app.br/docs/layout)
 
 ## 😎 Feito com Atenas
 - [Extensão Convert Click2Call](https://chrome.google.com/webstore/detail/convert-click2call/ibknofmdcbgmgadmdidenjifmphdjkog?hl=pt-br)
