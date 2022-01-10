@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../index.css">
+        <title>Alertas | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="buttons" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <a href="../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Alertas</h2>
+                                        <p>O módulo de alerta é uma notificação customizável por status, e cores</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.alerts}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-alert demo-alert" at-status="info">
+                                                    <div class="at-alert-icon"></div>
+                                                    <div class="at-alert-close"></div>
+                                                    <div class="at-alert-info">
+                                                        <b>Aviso!</b>
+                                                        <p>Aplicação atualizada</p>
+                                                    </div>
+                                                </div>                                                                                              
+                                                <div class="at-alert demo-alert" at-status="warning">
+                                                    <div class="at-alert-icon"></div>
+                                                    <div class="at-alert-close"></div>
+                                                    <div class="at-alert-info">
+                                                        <b>Alerta!</b>
+                                                        <p>Preencha todos campos</p>
+                                                    </div>
+                                                </div>                                                                                              
+                                                <div class="at-alert demo-alert" at-status="error">
+                                                    <div class="at-alert-icon"></div>
+                                                    <div class="at-alert-close"></div>
+                                                    <div class="at-alert-info">
+                                                        <b>Erro!</b>
+                                                        <p>Falha ao cadastrar</p>
+                                                    </div>
+                                                </div>                                                                                              
+                                                <div class="at-alert demo-alert" at-status="success">
+                                                    <div class="at-alert-icon"></div>
+                                                    <div class="at-alert-close"></div>
+                                                    <div class="at-alert-info">
+                                                        <b>Sucesso!</b>
+                                                        <p>Configurações salvas</p>
+                                                    </div>
+                                                </div>                                                                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <docs-footer path="../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../js/vendors/vue.min.js"></script>
+        <script src="../../../js/components/docs-navbar.js"></script>
+        <script src="../../../js/components/docs-footer.js"></script>
+        <script src="../../../js/vendors/highlight.min.js"></script>
+        <script src="../../../js/codes.js"></script>
+        <script src="../../../atenas.js"></script>
+        <script src="../../../index.js"></script>
+    </body>
+</html>

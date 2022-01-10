@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../index.css">
+        <title>Glassmorphism | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="buttons" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-12">
+                                        <a href="../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Glassmorphism</h2>
+                                        <p>Com o modificador glass, você pode criar elementos com o design imitando vidro, pode não ser compatível com todos os navegadores</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.glass}}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="at-u-flex at-u-my3">
+                                    <div class="at-u-col-12">
+                                        <h2>Resultado</h2>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-hero custom-bg-2 at-u-relative">
+                                                    <div class="at-hero-content" at-size="large">
+                                                        <div class="at-u-col-6 at-u-px2">
+                                                            <h2 at-tx="white">Light glass</h2>
+                                                            <p at-tx="transparent-white">Contraste maior com fundos escuros</p>
+                                                            <div class="at-card" at-glass="light" at-center>
+                                                                <img src="../../../assets/emoji.png" class="at-u-my2" style="width: 100px">
+                                                                <h1 at-tx="white">Sucesso!</h1>
+                                                                <p at-tx="transparent-white">Todas as tarefas foram realizadas, parabéns</p>
+                                                                <div class="at-u-m2">
+                                                                    <button class="at-button" at-tx="transparent-white">Voltar</button>
+                                                                    <button class="at-button" at-bg="white" at-tx="secondary">Obrigado!</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="at-u-col-6 at-u-px2">
+                                                            <h2 at-tx="white">Dark Glass</h2>
+                                                            <p at-tx="transparent-white">Contraste maior com fundos claros</p>
+                                                            <div class="at-card" at-glass="dark" at-center>
+                                                                <img src="../../../assets/emoji.png" class="at-u-my2" style="width: 100px">
+                                                                <h1 at-tx="white">Sucesso!</h1>
+                                                                <p at-tx="transparent-white">Todas as tarefas foram realizadas, parabéns</p>
+                                                                <div class="at-u-m2">
+                                                                    <button class="at-button" at-tx="transparent-white">Voltar</button>
+                                                                    <button class="at-button" at-bg="white" at-tx="secondary">Obrigado!</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../js/vendors/vue.min.js"></script>
+        <script src="../../../js/components/docs-navbar.js"></script>
+        <script src="../../../js/components/docs-footer.js"></script>
+        <script src="../../../js/vendors/highlight.min.js"></script>
+        <script src="../../../js/codes.js"></script>
+        <script src="../../../atenas.js"></script>
+        <script src="../../../index.js"></script>
+    </body>
+</html>

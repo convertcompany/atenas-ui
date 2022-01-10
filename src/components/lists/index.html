@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../index.css">
+        <title>Listas | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="buttons" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-12">
+                                        <a href="../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Listas</h2>
+                                        <p>Abaixo seguem algumas estilizações básicas nas listas</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.lists}}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="at-u-flex at-u-my3">
+                                    <div class="at-u-col-12">
+                                        <h2>Resultado</h2>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p3" at-left>
+                                                <div class="at-u-flex">
+                                                    <div class="at-u-pr4">
+                                                        <small>Lista ordenada</small>
+                                                        <h3>Classificação Formula 1</h3>
+                                                        <ol class="at-list">
+                                                            <li><small>Redbull Racing</small>M. Verstappen</li>
+                                                            <li><small>Mercedes</small>L. Hamilton</li>
+                                                            <li><small>Mercedes</small>V. Bottas</li>
+                                                            <li><small>Ferrari</small>C. Sainz</li>
+                                                        </ol>
+                                                    </div>
+                                                    <div class="at-u-px4">
+                                                        <small>Lista não ordenada</small>
+                                                        <h3>Sabores de Sorvete</h3>
+                                                        <ul class="at-list">
+                                                            <li>Chocolate</li>
+                                                            <li>Flocos</li>
+                                                            <li>Napolitano</li>
+                                                            <li>Creme</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../"></docs-footer>
+                </div>
+            </div>
+            <div class="at-modal" :at-active="system.showmodal">
+                <div class="at-modal-container">
+                    <h1>Esse é um modal</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam cupiditate repellendus, debitis labore impedit accusantium praesentium fuga aperiam deleniti voluptas qui ea neque. Delectus, reprehenderit? Error voluptatem sequi dolorem!</p><hr>
+                    <div class="at-u-mt2" at-right>
+                        <button class="at-button" v-on:click="system.showmodal = false">Fechar</button>
+                        <button class="at-button"at-bg="primary" v-on:click="system.showmodal = false">Entendi!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../js/vendors/vue.min.js"></script>
+        <script src="../../../js/components/docs-navbar.js"></script>
+        <script src="../../../js/components/docs-footer.js"></script>
+        <script src="../../../js/vendors/highlight.min.js"></script>
+        <script src="../../../js/codes.js"></script>
+        <script src="../../../atenas.js"></script>
+        <script src="../../../index.js"></script>
+    </body>
+</html>

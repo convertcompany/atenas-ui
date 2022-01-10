@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../index.css">
+        <title>Hero | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="buttons" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-12">
+                                        <a href="../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Cards</h2>
+                                        <p>Os cards são modulares e se adaptam aos conteudos internos, podem utilizar modificadores de shadow, background.</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.cards.preview}}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="at-u-flex at-u-my3">
+                                    <div class="at-u-col-12">
+                                        <h2>Exemplos</h2>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <section class="at-u-p1 at-u-rounded" at-bg="inherit">
+                                                    <div class="at-u-flex">
+                                                        <div class="at-u-p1 at-u-col-4">
+                                                            <div class="at-card" at-shadow="small">
+                                                                <img src="../../../assets/demo.jpeg" class="at-card-image">
+                                                                <h2>Imagem</h2>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="at-u-p1 at-u-col-4">
+                                                            <div class="at-card" at-shadow="small">
+                                                                <h2>Titulo</h2>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque praesentium nihil laudantium magnam, voluptate incidunt eius officia odit culpa ullam ipsum suscipit dignissimos deleniti atque esse possimus adipisci. Error!</p>
+                                                                <button class="at-button at-u-mt2" at-bg="primary">Saiba mais...</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="at-u-p1 at-u-col-4">
+                                                            <div class="at-card" at-shadow="small">
+                                                                <h2>Perfil do Cliente</h2><hr>
+                                                                <div class="at-profile">
+                                                                    <div class="at-profile-avatar" at-bg="primary" at-profile-mockup="GL"></div>
+                                                                    <div class="at-profile-info">
+                                                                        <b>João Silva</b>
+                                                                        <p>convert company</p>
+                                                                    </div>
+                                                                    <hr>
+                                                                </div>
+                                                                <div class="at-button-group">
+                                                                    <button class="at-button">Anterior</button>
+                                                                    <button class="at-button" at-bg="primary">Proximo</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../js/vendors/vue.min.js"></script>
+        <script src="../../../js/components/docs-navbar.js"></script>
+        <script src="../../../js/components/docs-footer.js"></script>
+        <script src="../../../js/vendors/highlight.min.js"></script>
+        <script src="../../../atenas.js"></script>
+        <script src="../../../js/codes.js"></script>
+        <script src="../../../index.js"></script>
+    </body>
+</html>

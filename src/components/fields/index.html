@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../index.css">
+        <title>Formulário | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="inputs" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <a href="../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Input</h2>
+                                        <p>Os inputs podem ser customizados com modificadores de status</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.fields.inputs}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-field">
+                                                    <input type="text" placeholder="Ex : joaosilva">
+                                                    <label><i class="bx bx-user"></i>Login do usuário</label>
+                                                </div>
+                                                <div class="at-field" at-status="warning">
+                                                    <p>Preencha este campo!</p>
+                                                    <input type="text" placeholder="Ex : joaosilva">
+                                                    <label><i class="bx bx-user"></i>Login do usuário</label>
+                                                </div>
+                                                <div class="at-field" at-status="error">
+                                                    <p>Informe um usuário válido!</p>
+                                                    <input type="text" placeholder="Ex : joaosilva">
+                                                    <label><i class="bx bx-user"></i>Login do usuário</label>
+                                                </div>
+                                                <div class="at-field" at-status="success">
+                                                    <p>Esse usuário é valido!</p>
+                                                    <input type="text" placeholder="Ex : joaosilva">
+                                                    <label><i class="bx bx-user"></i>Login do usuário</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fileupload" class="at-u-py3">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>File upload</h2>
+                                        <p>Input do tipo file, customizado via label</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.fields.file}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-field">
+                                                    <input type="file" id="pictures">
+                                                    <label for="pictures"><i class="bx bx-image-add"></i>Clique aqui para selecionar as fotos</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="checkbox" class="at-u-py3">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Checkbox / Radio</h2>
+                                        <p>Componentes de checkbox ou radio</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.fields.checkbox}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <h3>Checkbox</h3>
+                                                <div class="at-field">
+                                                    <label><input type="checkbox" v-model="system.darkmode">Ativar o modo dark<p>Essa opção ativa o modo escuro</p></label>
+                                                </div><hr>
+                                                <h3>Selecione a comida</h3>
+                                                <div class="at-field">
+                                                    <label><input type="radio" name="comida" checked>Polenta<p>12 unidades</p></label>
+                                                </div>
+                                                <div class="at-field">
+                                                    <label><input type="radio" name="comida">Mini Hamburger<p>4 unidades</p></label>
+                                                </div>
+                                                <div class="at-field">
+                                                    <label><input type="radio" name="comida">Pastel de Carne<p>1 unidade</p></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="range" class="at-u-py3">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Range</h2>
+                                        <p>Seletor de range, utiliza como cor o tema primario</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.fields.range}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-field">
+                                                    <input type="range">
+                                                    <p>Informe um valor até 100</p>
+                                                    <label>Quantidade de itens</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="textarea" class="at-u-py3">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Textarea</h2>
+                                        <p>Caixa de texto expandida, com resize vertical apenas</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.fields.textarea}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-field">
+                                                    <p at-right>0/100</p>
+                                                    <textarea placeholder="Digite aqui sua mensagem..."></textarea>
+                                                    <label><i class="bx bx-chat"></i>Fale conosco</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="select" class="at-u-py3">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Select</h2>
+                                        <p>Seletor de opções, pode ser utilizado com optgroup</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.fields.select}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <div class="at-field">
+                                                    <select>
+                                                        <option>Desenvolvimento</option>
+                                                        <option>Suporte</option>
+                                                        <option>Comercial</option>
+                                                    </select>
+                                                    <label><i class="bx bx-menu"></i>Qual o tipo do ticket?</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../js/vendors/vue.min.js"></script>
+        <script src="../../../js/components/docs-navbar.js"></script>
+        <script src="../../../js/components/docs-footer.js"></script>
+        <script src="../../../js/vendors/highlight.min.js"></script>
+        <script src="../../../js/codes.js"></script>
+        <script src="../../../atenas.js"></script>
+        <script src="../../../index.js"></script>
+    </body>
+</html>

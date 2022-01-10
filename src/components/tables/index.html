@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../../index.css">
+        <title>Tabelas | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="components" path="../"></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="normal" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-12">
+                                        <a href="../" class="at-u-semibold at-u-h5">Voltar</a>
+                                        <h2>Tabelas</h2>
+                                        <p>Utilize a classe de tabela do atenas, e alguns modificadores para adicionar novos estilos</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-html">{{system.codes.components.tables}}</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="at-u-flex at-u-my3">
+                                    <div class="at-u-col-12">
+                                        <h2>Resultado</h2>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-relative at-u-p3"> 
+                                                <table class="at-table">
+                                                    <thead at-bg="primary">
+                                                        <tr>
+                                                            <th>Código</th>
+                                                            <th>Nome</th>
+                                                            <th at-center>Empresa</th>
+                                                            <th at-right>Cidade</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td at-tx="primary">#124</td>
+                                                            <td>Gabriel Leite</td>
+                                                            <td at-center>convert company</td>
+                                                            <td at-right>Passo Fundo, RS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td at-tx="primary">#142</td>
+                                                            <td>Jarbas Leite</td>
+                                                            <td at-center>convert company</td>
+                                                            <td at-right>Passo Fundo, RS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td at-tx="primary">#512</td>
+                                                            <td>Bruno Leite</td>
+                                                            <td at-center>convert company</td>
+                                                            <td at-right>Passo Fundo, RS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td at-tx="primary">#124</td>
+                                                            <td>Gabriel Leite</td>
+                                                            <td at-center>convert company</td>
+                                                            <td at-right>Passo Fundo, RS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td at-tx="primary">#142</td>
+                                                            <td>Jarbas Leite</td>
+                                                            <td at-center>convert company</td>
+                                                            <td at-right>Passo Fundo, RS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td at-tx="primary">#512</td>
+                                                            <td>Bruno Leite</td>
+                                                            <td at-center>convert company</td>
+                                                            <td at-right>Passo Fundo, RS</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <td colspan="100%">Mostrando 3 registros</td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path="../"></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../../js/vendors/vue.min.js"></script>
+        <script src="../../../atenas.js"></script>
+        <script src="../../../js/components/docs-navbar.js"></script>
+        <script src="../../../js/components/docs-footer.js"></script>
+        <script src="../../../js/vendors/highlight.min.js"></script>
+        <script src="../../../js/codes.js"></script>
+        <script src="../../../index.js"></script>
+    </body>
+</html>

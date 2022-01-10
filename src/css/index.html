@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../css/vendors/dracula.min.css">
+        <link rel="stylesheet" href="../../dist/atenas-ui.min.css">
+        <link rel="stylesheet" href="../../index.css">
+        <title>Tema | Atenas UI</title>
+    </head>
+    <body at-dark>
+        <div id="app">
+            <docs-navbar active="css" path=""></docs-navbar>
+            <div class="at-page">
+                <div class="at-page-container">
+                    <div class="at-page-content">
+                        <div class="at-u-container at-u-px3">
+                            <div id="darkmode" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Darkmode!</h2>
+                                        <p>Apague a luz, utilize as classes especificas do modo dark</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>src/index.html</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code v-show="system.darkmode" class="language-html">{{system.codes.css.darkmode}}</code></pre>
+                                            <pre><code v-show="!system.darkmode" class="language-html">{{system.codes.css.darkmodefalse}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p0">
+                                                <!-- Adicionando o atributo [at-dark] ao body -->
+                                                <section>
+                                                    <div class="at-card at-u-p2">
+                                                        <!-- Esconde o h3 no modo dark -->
+                                                        <h3 at-hide-dark>Card de Demonstração Light</h3>
+                                                        <!-- Exibe o h3 no modo dark -->
+                                                        <h3 at-show-dark>Card de Demonstração Dark</h3>
+                                                        <p>Esse é um card de exemplo clique abaixo para alternar o tema!</p>
+                                                        <button class="at-button at-u-mt1" at-bg="primary" @click="(system.darkmode = !system.darkmode)">Alternar</button>
+                                                    </div>
+                                                <section>                                                                                                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="at-u-my3">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Darkmode no CSS</h2>
+                                        <p>Estilize elementos especificamente no modo dark</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>css/styles.css</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-css">{{system.codes.css.darkmodecss}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p0">
+                                                <!-- Adicionando o atributo [at-dark] ao body -->
+                                                <section>
+                                                    <div class="at-card at-u-p2">
+                                                        <!-- Esconde o h3 no modo dark -->
+                                                        <h3 at-hide-dark>Card de Demonstração Light</h3>
+                                                        <!-- Exibe o h3 no modo dark -->
+                                                        <h3 at-show-dark>Card de Demonstração Dark</h3>
+                                                        <p>Esse é um card de exemplo clique abaixo para alternar o tema!</p>
+                                                        <button class="at-button button-toggle at-u-mt1" at-bg="primary" @click="(system.darkmode = !system.darkmode)">Alternar o tema</button>
+                                                    </div>
+                                                <section>                                                                                                                     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="colors" class="at-u-py2">
+                                <div class="at-u-flex">
+                                    <div class="at-u-col-7">
+                                        <h2>Utilizando Variáveis do CSS!</h2>
+                                        <p>O atenas conta com uma seleção de cores enorme, você pode utilizar elas da seguinte maneira</p>
+                                        <div class="at-code-block">
+                                            <div class="at-code-tabs">
+                                                <div class="at-code-tab" at-active>css/styles.css</div>
+                                                <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                            </div>
+                                            <pre><code class="language-css">{{system.codes.css.test}}</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="at-u-col-5 at-u-pl2">
+                                        <h2>Preview</h2>
+                                        <p>O resultado gerado é o seguinte, o botão tem as cores correspondentes as variáveis referenciadas abaixo</p>
+                                        <div class="at-code-block at-code-block-result" at-shadow="small">
+                                            <div class="at-code-block-titlebar">
+                                                <div class="at-code-block-traffic-lights"><div></div><div></div><div></div></div>
+                                                <small>https://convert.app.br/atenas</small>
+                                            </div>
+                                            <div class="at-u-p2">
+                                                <button class="my-button">Clique aqui!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="theme" class="at-u-my3">
+                                <h2>Customizando o tema de cores do atenas</h2>
+                                <p>Abaixo estão todas as variáveis de estilo e de cores do atenas, você pode customizar elas no seu stylesheet.</p>
+                                <div class="at-code-block">
+                                    <div class="at-code-tabs">
+                                        <div class="at-code-tab" at-active>css/styles.css</div>
+                                        <button class="at-button" onclick="copyCodeToClipboard(this)"><i class="bx bx-copy-alt"></i>Copiar código</button>
+                                    </div>
+                                    <pre><code class="nohighlight" v-html="system.codes.css.variables"></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <docs-footer path=""></docs-footer>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../../js/vendors/vue.min.js"></script>
+        <script src="../../js/components/docs-navbar.js"></script>
+        <script src="../../js/components/docs-footer.js"></script>
+        <script src="../../js/vendors/highlight.min.js"></script>
+        <script src="../../js/codes.js"></script>
+        
+        <script src="../../index.js"></script>
+    </body>
+</html>
