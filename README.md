@@ -14,3 +14,5 @@
   <br>
 </p>
 
+## Começando com Atenas
+Para adicionar o atenas ao seu projeto é muito simples, você pode seguir as seguintes maneiras :
