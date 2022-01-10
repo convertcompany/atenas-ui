@@ -30,4 +30,6 @@ Você pode fazer o seu proprio build do atenas, para isso é necessário seguir 
 - Pronto!
 
 ## ⚡️ O Projeto Atenas
-O Atenas UI é um framework de UI desenvolvido pela Convert® Company, seguindo as regras do design system Convert®, e é distribuido gratuitamente para uso, saiba mais sobre nossa empresa
+O Atenas UI é um framework de UI desenvolvido pela Convert® Company, seguindo as regras do design system Convert®, e é distribuido gratuitamente para uso, saiba mais sobre nossa empresa :
+
+[Convert Company](https://convertcompany.com.br)
