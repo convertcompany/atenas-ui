@@ -106,7 +106,7 @@
         <script src="../../src/js/codes.js"></script>
         <script src="../../src/index.js"></script>
         <script type="text/javascript">
-            app.system.darkmode = false;
+            document.querySelector("body").removeAttribute("at-dark")
             document.querySelector(".at-page-container").addEventListener("scroll", function(e) {
                 if ( document.elementFromPoint((window.innerWidth - 20), 70)){
                     if ( document.querySelector("#navbar-home").getAttribute("start") == ""){
