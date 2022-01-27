@@ -1,5 +1,5 @@
 Vue.component("docs-footer", {
-    template : `
+    template : /*html*/`
     <div>
         <div class="at-hero footer" at-bg="primary">
             <div class="at-hero-content at-u-flex-column" at-size="medium">

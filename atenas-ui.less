@@ -1,4 +1,4 @@
-/* Atenas UI by Convert Company | v1.0.0 | MIT License | https://github.com/convertcompany/atenas-ui/ */
+/* Atenas UI by Convert Company | v1.0.2 | MIT License | https://github.com/convertcompany/atenas-ui/ */
 :root{
     --at-slate : #95a7b82c;
     --at-slate-50 : #f8fafc;
@@ -282,6 +282,9 @@ p,div,li{
 a{
     font-weight: 500;
     cursor: pointer;
+    &:visited{
+        color: unset;
+    }
 }
 button, input, textarea, select{
     border: none;
@@ -292,19 +295,19 @@ hr{
     margin: 10px 0px;
     background: var(--at-slate);
     border: none;
-    height: 1.5px;
+    height: 1px;
 }
 kbd {
-	margin: 0px 0.1em;
-	padding: 0.2em 0.6em;
-	border-radius: 6px;
-	color: var(--at-slate-400);
+    margin: 0px 0.1em;
+    padding: 0.2em 0.6em;
+    border-radius: 6px;
+    color: var(--at-slate-400);
     background-color: var(--at-slate);
     border: solid 1px var(--at-slate);
-	line-height: 1.4;
-	font-size: 11px;
-	display: inline-block;
-	box-shadow: 0px 2px 0px var(--at-slate-transparent);
+    line-height: 1.4;
+    font-size: 11px;
+    display: inline-block;
+    box-shadow: 0px 2px 0px var(--at-slate-transparent);
     cursor: pointer;
     &:active{
         box-shadow: none;
@@ -430,6 +433,9 @@ kbd {
     }
     &[at-tx="title"]{
         color: var(--at-title-color) !important;
+    }
+    &[at-tx="slate"]{
+        color: var(--at-slate-400) !important;
     }
     &[at-tx^="gradient"]{
         -webkit-background-clip: text;
@@ -905,6 +911,7 @@ kbd {
     background-color: #FFF;
     box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     color: var(--at-title-color);
+    border-bottom: solid 1px var(--at-slate);
     z-index: 9999999999999999;
     .at-u-container{
         position: relative;
@@ -947,7 +954,7 @@ kbd {
         }
     }
     & + .at-page{
-        padding-top: 70px;
+        margin-top: 70px;
         height: calc(100vh - 70px);
         .at-sidebar{
             border-radius: 0px;
@@ -1668,6 +1675,26 @@ kbd {
         border-bottom-left-radius: 6px;
         border-top-left-radius: 6px;
         height:20px;
+    }
+}
+.at-tabs{
+    width: 100%;
+    display: flex;
+    a{
+        padding: 15px 20px;
+        flex-grow: 1;
+        text-align: center;
+        user-select: none;
+        text-decoration: none;
+        border-bottom: solid var(--at-border-size) var(--at-slate);
+        transition: .2s all ease;
+        &[at-active]{
+            background-color: var(--at-slate);
+            border-color: var(--at-slate);
+        }
+        &:hover{
+            background-color: var(--at-slate);
+        }
     }
 }
 /** Estilização específica do modo dark **/
@@ -2494,6 +2521,16 @@ kbd {
 }
 .at-u-vh{
     height: 100vh;
+}
+.at-u-clickable{
+    user-select: none;
+    cursor: pointer;
+    &:hover{
+        box-shadow: inset 0 0 0 1000px rgba(120,140,160, 0.05);
+    }
+    &:active{
+        box-shadow: inset 0 0 0 1000px rgba(120,140,160, 0.1);
+    }
 }
 @media (max-width: 40em) {
     .at-u-xs-hide {

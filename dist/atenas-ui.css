@@ -1,4 +1,4 @@
-/* Atenas UI by Convert Company | v1.0.0 | MIT License | https://github.com/convertcompany/atenas-ui/ */
+/* Atenas UI by Convert Company | v1.0.2 | MIT License | https://github.com/convertcompany/atenas-ui/ */
 :root {
   --at-slate: #95a7b82c;
   --at-slate-50: #f8fafc;
@@ -293,6 +293,9 @@ a {
   font-weight: 500;
   cursor: pointer;
 }
+a:visited {
+  color: unset;
+}
 button,
 input,
 textarea,
@@ -305,7 +308,7 @@ hr {
   margin: 10px 0px;
   background: var(--at-slate);
   border: none;
-  height: 1.5px;
+  height: 1px;
 }
 kbd {
   margin: 0px 0.1em;
@@ -442,6 +445,9 @@ kbd:active {
 }
 [at-tx][at-tx="title"] {
   color: var(--at-title-color) !important;
+}
+[at-tx][at-tx="slate"] {
+  color: var(--at-slate-400) !important;
 }
 [at-tx][at-tx^="gradient"] {
   -webkit-background-clip: text;
@@ -968,6 +974,7 @@ kbd:active {
   background-color: #FFF;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
   color: var(--at-title-color);
+  border-bottom: solid 1px var(--at-slate);
   z-index: 9999999999999999;
 }
 .at-navbar .at-u-container {
@@ -1015,7 +1022,7 @@ kbd:active {
   vertical-align: middle;
 }
 .at-navbar + .at-page {
-  padding-top: 70px;
+  margin-top: 70px;
   height: calc(100vh - 70px);
 }
 .at-navbar + .at-page .at-sidebar {
@@ -1739,6 +1746,26 @@ kbd:active {
   border-bottom-left-radius: 6px;
   border-top-left-radius: 6px;
   height: 20px;
+}
+.at-tabs {
+  width: 100%;
+  display: flex;
+}
+.at-tabs a {
+  padding: 15px 20px;
+  flex-grow: 1;
+  text-align: center;
+  user-select: none;
+  text-decoration: none;
+  border-bottom: solid var(--at-border-size) var(--at-slate);
+  transition: 0.2s all ease;
+}
+.at-tabs a[at-active] {
+  background-color: var(--at-slate);
+  border-color: var(--at-slate);
+}
+.at-tabs a:hover {
+  background-color: var(--at-slate);
 }
 /** Estilização específica do modo dark **/
 [at-dark] {
@@ -2563,6 +2590,16 @@ kbd:active {
 }
 .at-u-vh {
   height: 100vh;
+}
+.at-u-clickable {
+  user-select: none;
+  cursor: pointer;
+}
+.at-u-clickable:hover {
+  box-shadow: inset 0 0 0 1000px rgba(120, 140, 160, 0.05);
+}
+.at-u-clickable:active {
+  box-shadow: inset 0 0 0 1000px rgba(120, 140, 160, 0.1);
 }
 @media (max-width: 40em) {
   .at-u-xs-hide {

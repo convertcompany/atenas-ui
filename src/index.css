@@ -157,7 +157,7 @@ body{
 }
 
 .page-demo-sidebar-logo{
-    width: 170px;
+    width: 80%;
     padding-right: 70px;
     margin: 10px 20px;
     display: block;
@@ -248,7 +248,7 @@ body{
 
 #img-rocket{
     width: 240%;
-    margin-left: -100%;
+    margin-left: -120%;
 }
 
 .app-homepage .at-hero-content img.hover{
@@ -262,41 +262,6 @@ body{
 .app-homepage{
     --at-font-size : 15px;
 }
-
- @-webkit-keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-    }
-    100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-}
-@keyframes pulsate-fwd {
-    0% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.1);
-    }
-    100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-}
-
-.pulsate-fwd {
-	-webkit-animation: pulsate-fwd 6s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite both;
-	        animation: pulsate-fwd 6s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite both;
-}
-
 
 #img-book{
     width: 120%;
@@ -385,4 +350,8 @@ h1{
     width: 40%;
     margin: 0 auto;
     text-align: center;
+}
+
+a{
+    text-decoration: none !important;
 }

@@ -301,6 +301,7 @@ const codes = {
         `    --at-rose-900 : #881337; <div class="badge-circle-color" style="background: #881337;"></div>\n`+
         `    --at-rose-transparent : #F43F5E2C; <div class="badge-circle-color" style="background: #F43F5E2C;"></div>\n`+
         `    --at-border-radius :  <span class='font-cyan'>6</span><span class='font-pink'>px</span>;\n`+
+        `    --at-border-size :  <span class='font-cyan'>2</span><span class='font-pink'>px</span>;\n`+
         `    --at-bg-color : #FFFFFF; <div class="badge-circle-color" style="background: #FFFFFF;"></div>\n`+
         `    --at-title-color : #112233; <div class="badge-circle-color" style="background: #112233;"></div>\n`+
         `    --at-subtitle-color : #95A7B8; <div class="badge-circle-color" style="background: #95A7B8;"></div>\n`+
