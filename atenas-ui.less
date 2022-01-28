@@ -1680,6 +1680,9 @@ kbd {
 .at-tabs{
     width: 100%;
     display: flex;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     a{
         padding: 15px 20px;
         flex-grow: 1;
@@ -1694,6 +1697,39 @@ kbd {
         }
         &:hover{
             background-color: var(--at-slate);
+        }
+    }
+}
+.at-offcanvas{
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+    &[at-active]{
+        visibility: visible;
+        opacity: 1;
+        .at-offcanvas-container{
+            right: 400px !important;
+        }
+    }
+    &:not([at-no-backdrop]){
+        position: fixed;
+        inset: 0;
+        background-color: rgba(20, 30, 40, 0.2);
+    }
+    .at-offcanvas-container{
+        position: fixed;
+        top: 0px; right: 0px;
+        height: 100vh;
+        width: 400px;
+        background-color: #FFF;
+        padding: 40px;
+        border-left: solid 1px var(--at-slate);
+        transform: translateX(400px);
+        transition: all ease .3s;
+        overflow-y: scroll;
+        .at-close{
+            position: absolute;
+            top: 20px; right: 20px;
         }
     }
 }
@@ -1731,6 +1767,12 @@ kbd {
                 color: var(--at-title-color);
             }
         }
+    }
+    .at-offcanvas:not([at-no-backdrop]){
+        background-color: rgba(10, 20, 30, 0.8);
+    }
+    .at-offcanvas-container{
+        background-color: var(--at-slate-800);
     }
     .at-sidebar{
         background-color: var(--at-slate-800);
