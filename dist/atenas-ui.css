@@ -1750,6 +1750,9 @@ kbd:active {
 .at-tabs {
   width: 100%;
   display: flex;
+  overflow: hidden;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 .at-tabs a {
   padding: 15px 20px;
@@ -1766,6 +1769,41 @@ kbd:active {
 }
 .at-tabs a:hover {
   background-color: var(--at-slate);
+}
+.at-offcanvas {
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.at-offcanvas[at-active] {
+  visibility: visible;
+  opacity: 1;
+}
+.at-offcanvas[at-active] .at-offcanvas-container {
+  right: 400px !important;
+}
+.at-offcanvas:not([at-no-backdrop]) {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(20, 30, 40, 0.2);
+}
+.at-offcanvas .at-offcanvas-container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100vh;
+  width: 400px;
+  background-color: #FFF;
+  padding: 40px;
+  border-left: solid 1px var(--at-slate);
+  transform: translateX(400px);
+  transition: all ease 0.3s;
+  overflow-y: scroll;
+}
+.at-offcanvas .at-offcanvas-container .at-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 /** Estilização específica do modo dark **/
 [at-dark] {
@@ -1800,6 +1838,12 @@ kbd:active {
 [at-dark] .at-navbar .at-navbar-item:hover,
 [at-dark] .at-navbar .at-navbar-item[at-active] {
   color: var(--at-title-color);
+}
+[at-dark] .at-offcanvas:not([at-no-backdrop]) {
+  background-color: rgba(10, 20, 30, 0.8);
+}
+[at-dark] .at-offcanvas-container {
+  background-color: var(--at-slate-800);
 }
 [at-dark] .at-sidebar {
   background-color: var(--at-slate-800);
