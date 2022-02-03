@@ -2,7 +2,7 @@ const codes = {
     installation : {
         add : 
             `<!-- Carregando atenas remotamente via CDN -->\n`+
-            `<link rel="stylesheet" type="text/css" href="https://cdn.convert.app.br/atenas.min.css"/>\n`+
+            `<link rel="stylesheet" type="text/css" href="https://atenas.convert.app.br/dist/atenas.min.css"/>\n`+
             `<!-- Carregando atenas localmente -->\n`+
             `<link rel="stylesheet" type="text/css" href="../../css/atenas.min.css"/>`,
         extra : 
