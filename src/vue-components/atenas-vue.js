@@ -36,10 +36,10 @@ Vue.component("v-at-field", {
 
 Vue.component("v-at-button", {
     template : /*html*/`
-        <button class="at-button">
+        <button class="at-button" :at-loading="atLoading">
             <i :class="labelIcon" v-if="labelIcon"></i>
             {{ label }}
         </button>
     `,
-    props : ["label", "labelIcon", "description", "status", "name"],
+    props : ["label", "labelIcon", "description", "status", "name" , "atLoading"],
 });

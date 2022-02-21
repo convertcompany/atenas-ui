@@ -6,8 +6,19 @@ const app = new Vue({
                 darkmode : false,
                 sidebanner_compacted : false,
                 codes : codes,
-                showmodal : false
+                showmodal : false,
+                colors : ["slate", "gray", "zinc", "neutral", "stone", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
             }
+        }
+    },
+    methods : {
+        returnColorVariable(x,y){
+            let z = (y>4) ? 3 : 6;
+            y = y*100;
+            return `
+                background : var(--at-${x}-${y});
+                color: var(--at-${x}-${z}00);
+            `
         }
     },
     watch:{
@@ -25,6 +36,8 @@ const app = new Vue({
 hljs.highlightAll();
 
 function copyCodeToClipboard(x){
+    x.innerText = "Código copiado!"
+    x.setAttribute("at-bg", "primary");
     const node = x.parentElement.nextElementSibling;
     if (document.body.createTextRange) {
         const range = document.body.createTextRange();
@@ -41,6 +54,7 @@ function copyCodeToClipboard(x){
     } else {
         console.warn("Could not select text in node: Unsupported browser.");
     }
+    setTimeout(() => { x.innerText = "Copiar código"; x.removeAttribute("at-bg"); },1500)
 }
 
 function appInit(){

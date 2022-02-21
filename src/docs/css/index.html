@@ -137,6 +137,24 @@
                                     <pre><code class="nohighlight" v-html="system.codes.css.variables"></code></pre>
                                 </div>
                             </div>
+                            <!-- <div class="at-u-my3">
+                                <h2>Paleta de Cores</h2>
+                                <div>
+                                    <div v-for="color in system.colors">
+                                        <div class="at-u-py2 at-u-flex-grow at-u-col-1" at-left>
+                                            {{ color }}
+                                        </div>
+                                        <div class="at-u-flex at-u-my1 at-u-rounded at-u-overflow-hidden">
+                                            <div class="at-u-py2 at-u-flex-grow at-u-rounded at-u-mr1" :style="returnColorVariable(color, 0.5)" at-center>
+                                               50
+                                            </div>
+                                            <div v-for="n in 9" class="at-u-py2 at-u-rounded at-u-mr1 at-u-flex-grow" :style="returnColorVariable(color, n)" at-center>
+                                               {{n}}00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                     <docs-footer path=""></docs-footer>
