@@ -1,6 +1,6 @@
 {
   "name": "atenas-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Framework de Componentes CSS, por Convert Company",
   "main": "index.js",
   "scripts": {

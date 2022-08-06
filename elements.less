@@ -1,0 +1,71 @@
+/* Atenas UI by Convert Company | v1.0.4 | MIT License | https://github.com/convertcompany/atenas-ui/ */
+/* Esse arquivo é o responsável pela gerencia e customizacao de elementos HTML via Atenas UI */
+body:not([at-compatible]){
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+    *:not(i){
+        margin: 0px;
+        font-family:var(--at-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;;
+        box-sizing: border-box;
+    }
+    h1,h2,h3,h4,h5,h6,b,strong{
+        color: var(--at-title-color);
+        font-weight: 700;
+    }
+    label{
+        color: var(--at-title-color);
+    }
+    p,div,li{
+        color: var(--at-subtitle-color);
+        font-weight: 500;
+        font-size: var(--at-font-size);
+        text-decoration: none;
+    }
+    a{
+        font-weight: 500;
+        cursor: pointer;
+        &:visited{
+            color: unset;
+        }
+    }
+    button, input, textarea, select{
+        border: none;
+        outline: none;
+        font-weight: 500;
+    }
+    hr{
+        margin: 10px 0px;
+        background: var(--at-slate);
+        border: none;
+        height: 1px;
+    }
+    kbd {
+        margin: 0px 0.1em;
+        padding: 0.2em 0.6em;
+        border-radius: 6px;
+        color: var(--at-slate-400);
+        background-color: var(--at-slate);
+        border: solid 1px var(--at-slate);
+        line-height: 1.4;
+        font-size: 11px;
+        display: inline-block;
+        box-shadow: 0px 2px 0px var(--at-slate-transparent);
+        cursor: pointer;
+        &:active{
+            box-shadow: none;
+            margin-top: 1px;
+        }
+    }
+    ::-webkit-scrollbar {
+        background-color: rgba(0, 0, 0, 0.05);
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--at-slate);
+        border-radius: 20px;
+    }
+    select option{
+        color: #000 !important;
+    }
+}
