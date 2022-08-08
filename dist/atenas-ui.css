@@ -283,61 +283,61 @@
 /* Importando arquivos */
 /* Atenas UI by Convert Company | v1.0.4 | MIT License | https://github.com/convertcompany/atenas-ui/ */
 /* Esse arquivo é o responsável pela gerencia e customizacao de elementos HTML via Atenas UI */
-body:not([at-compatible]) {
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 10px;
   margin: 0px;
 }
-body:not([at-compatible]) *:not(i) {
+body *:not(i) {
   margin: 0px;
   font-family: var(--at-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
   box-sizing: border-box;
 }
-body:not([at-compatible]) h1,
-body:not([at-compatible]) h2,
-body:not([at-compatible]) h3,
-body:not([at-compatible]) h4,
-body:not([at-compatible]) h5,
-body:not([at-compatible]) h6,
-body:not([at-compatible]) b,
-body:not([at-compatible]) strong {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body b,
+body strong {
   color: var(--at-title-color);
   font-weight: 700;
 }
-body:not([at-compatible]) label {
+body label {
   color: var(--at-title-color);
 }
-body:not([at-compatible]) p,
-body:not([at-compatible]) div,
-body:not([at-compatible]) li {
+body p,
+body div,
+body li {
   color: var(--at-subtitle-color);
   font-weight: 500;
   font-size: var(--at-font-size);
   text-decoration: none;
 }
-body:not([at-compatible]) a {
+body a {
   font-weight: 500;
   cursor: pointer;
 }
-body:not([at-compatible]) a:visited {
+body a:visited {
   color: unset;
 }
-body:not([at-compatible]) button,
-body:not([at-compatible]) input,
-body:not([at-compatible]) textarea,
-body:not([at-compatible]) select {
+body button,
+body input,
+body textarea,
+body select {
   border: none;
   outline: none;
   font-weight: 500;
 }
-body:not([at-compatible]) hr {
+body hr {
   margin: 10px 0px;
   background: var(--at-slate);
   border: none;
   height: 1px;
 }
-body:not([at-compatible]) kbd {
+body kbd {
   margin: 0px 0.1em;
   padding: 0.2em 0.6em;
   border-radius: 6px;
@@ -350,19 +350,19 @@ body:not([at-compatible]) kbd {
   box-shadow: 0px 2px 0px var(--at-slate-transparent);
   cursor: pointer;
 }
-body:not([at-compatible]) kbd:active {
+body kbd:active {
   box-shadow: none;
   margin-top: 1px;
 }
-body:not([at-compatible]) ::-webkit-scrollbar {
+body ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.05);
   width: 10px;
 }
-body:not([at-compatible]) ::-webkit-scrollbar-thumb {
+body ::-webkit-scrollbar-thumb {
   background-color: var(--at-slate);
   border-radius: 20px;
 }
-body:not([at-compatible]) select option {
+body select option {
   color: #000 !important;
 }
 /* Atenas UI by Convert Company | v1.0.4 | MIT License | https://github.com/convertcompany/atenas-ui/ */
