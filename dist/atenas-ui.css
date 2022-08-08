@@ -287,6 +287,7 @@ body:not([at-compatible]) {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 10px;
+  margin: 0px;
 }
 body:not([at-compatible]) *:not(i) {
   margin: 0px;
@@ -6217,7 +6218,7 @@ body:not([at-compatible]) select option {
 }
 .at-u-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 .at-u-vh {
   height: 100vh;
