@@ -7,7 +7,7 @@
 <h3 align="center">Atenas UI</h3>
 
 <p align="center">
-  Framework de Componentes do design system Convert Company, Open Source
+  Framework de Componentes do design system Convert® Company, Open Source
   <br>
   <a href="https://atenas.convert.app.br/src/docs/installation"><strong>Explorar Documentação »</strong></a>
   <br>
