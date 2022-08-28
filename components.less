@@ -733,14 +733,14 @@
     background: var(--at-bg-color);
     top: 40px; right: 50px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-    min-width: 250px;
-    // max-width: 550px;
+    min-width: 300px;
     user-select: none;
     cursor: pointer;
     border-radius:10px;
     padding: 0px 10px;
     overflow: hidden;
     border: solid 1px var(--at-slate);
+    transition: .3s all ease;
     .at-alert-icon{
         width: 40px;
         height: 40px;
@@ -1129,6 +1129,62 @@
         .at-close{
             position: absolute;
             top: 20px; right: 20px;
+        }
+    }
+}
+.at-toast{
+    position: fixed;
+    user-select: none;
+    padding: 12.5px 15px;
+    padding-right: 35px;
+    border-radius: 10px;
+    font-size: var(--at-font-size);
+    transition: 0.5s all ease;
+    color: #FFFFFF;
+    background: #000000;
+    cursor: pointer;
+    &[at-pos="top"], &[at-pos="bottom"]{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &[at-pos="top-left"], &[at-pos="bottom-left"]{
+        left: 25px;
+    }
+    &[at-pos="top-right"], &[at-pos="bottom-right"]{
+        right: 25px;
+    }
+    &[at-pos="top"], &[at-pos="top-left"], &[at-pos="top-right"]{
+        top: 25px;
+    }
+    &[at-pos="bottom"], &[at-pos="bottom-left"], &[at-pos="bottom-right"]{
+        bottom: 25px;
+    }
+    .at-toast-close{
+        position: absolute;
+        right: 10px; top: 50%;
+        padding: 5px; 
+        transform: scale(1.25) translateY(-50%);
+        &:before,&:after{
+            transition: .2s;
+            content:'';
+            position:absolute;
+            width:10px;
+            height:1.2px;
+            background-color:var(--at-subtitle-color);
+            border-radius:12px;
+        }
+        
+        &:before{
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            transform:rotate(45deg);
+            left:0px;
+        }
+        &:after{
+            -webkit-transform:rotate(-45deg);
+            -moz-transform:rotate(-45deg);
+            transform:rotate(-45deg);
+            right:0px;
         }
     }
 }
