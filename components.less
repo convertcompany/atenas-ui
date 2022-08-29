@@ -1,4 +1,4 @@
-/* Atenas UI by Convert Company | v1.0.4 | MIT License | https://github.com/convertcompany/atenas-ui/ */
+/* Atenas UI by Convert Company | v1.0.5 | MIT License | https://github.com/convertcompany/atenas-ui/ */
 /* Esse arquivo é o responsável pelos componentes CSS do Atenas UI */
 .at-button{
     font-size: var(--at-font-size);
@@ -1140,7 +1140,6 @@
     border-radius: 10px;
     font-size: var(--at-font-size);
     transition: 0.5s all ease;
-    color: #FFFFFF;
     background: #000000;
     cursor: pointer;
     &[at-pos="top"], &[at-pos="bottom"]{
@@ -1170,8 +1169,9 @@
             position:absolute;
             width:10px;
             height:1.2px;
-            background-color:var(--at-subtitle-color);
+            background-color: currentColor;
             border-radius:12px;
+            opacity: 0.5;
         }
         
         &:before{
@@ -1186,5 +1186,156 @@
             transform:rotate(-45deg);
             right:0px;
         }
+    }
+}
+.at-dialog{
+    position: fixed;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    z-index: 9999999999999999999999999999;
+    background: rgba(17, 34, 51, 0.6);
+    backdrop-filter: blur(5px);
+    transition: 200ms;
+    visibility: hidden;
+    opacity: 0;
+    .at-dialog-container{
+        transition: 200ms all ease;
+        background-color: var(--at-bg-color);
+        min-width: 200px;
+        max-width: 350px;
+        position:absolute;
+        top:50%; left: 50%;
+        transform : translate(-50%, -50%) scale(0.05);
+        border-radius: 12px;
+        max-height: 80vh;
+        border: solid 1px var(--at-slate);
+        text-align: center;
+        .at-dialog-body{
+            padding: 30px;
+        }
+        .at-dialog-close{
+            position: absolute;
+            right: 25px; top: 25px;
+            padding: 5px; 
+            transform: scale(1.35);
+            cursor: pointer;
+            &:before,&:after{
+                transition: .2s;
+                content:'';
+                position:absolute;
+                width:10px;
+                height:1.2px;
+                background-color: currentColor;
+                border-radius:12px;
+                opacity: 0.5;
+            }
+            
+            &:before{
+                -webkit-transform:rotate(45deg);
+                -moz-transform:rotate(45deg);
+                transform:rotate(45deg);
+                left:0px;
+            }
+            &:after{
+                -webkit-transform:rotate(-45deg);
+                -moz-transform:rotate(-45deg);
+                transform:rotate(-45deg);
+                right:0px;
+            }
+        }
+        .at-button-group{
+            margin-top: 25px;
+            padding-top: 15px;
+        }
+        .at-dialog-icon{
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            position: relative;
+            background: var(--at-slate);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 60%;
+            margin: 0px auto;
+            margin-bottom: 15px;
+            i{
+                font-size: 24px;
+                position:absolute;
+                top:50%; left: 50%;
+                transform : translate(-50%, -50%);
+            }
+        }
+    }
+    &[at-active]{
+        visibility: visible;
+        opacity: 1;
+        .at-dialog-container{
+            transform: translate(-50%,-50%) scale(1);
+        }
+    }
+    &[at-status="success"]{
+        .at-dialog-icon{
+            background-color: var(--at-teal-transparent);
+            color: var(--at-teal-500);
+            background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M31.8343 2.69976C30.0463 1.02527 27.6429 0 25 0H10C4.47715 0 0 4.47715 0 10V25C0 30.5228 4.47715 35 10 35H25C30.5228 35 35 30.5228 35 25V10C35 9.59477 34.9759 9.19517 34.929 8.80256L22.69 26.6938C22.1762 27.4448 21.3494 27.922 20.4422 27.9913C19.535 28.0605 18.6453 27.7143 18.0236 27.05L6.8097 15.0688C5.67751 13.8592 5.74031 11.9607 6.94998 10.8285C8.15964 9.69631 10.0581 9.75911 11.1903 10.9688L19.849 20.22L31.8343 2.69976Z' fill='%2314B8A6'/%3E%3C/svg%3E%0A");
+        }
+    }
+    &[at-status="error"]{
+        .at-dialog-icon{
+            background-color: var(--at-red-transparent);
+            background-image: url("data:image/svg+xml,%3Csvg width='51' height='51' viewBox='0 0 51 51' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_25_16)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M32.5711 7.82232C28.6658 3.91708 22.3342 3.91708 18.4289 7.82232L7.82233 18.4289C3.91709 22.3342 3.91709 28.6658 7.82233 32.5711L18.4289 43.1777C22.3342 47.0829 28.6658 47.0829 32.5711 43.1777L43.1777 32.5711C47.0829 28.6658 47.0829 22.3342 43.1777 18.4289L32.5711 7.82232ZM25.5 28C27.433 28 29 26.433 29 24.5L29 17.5C29 15.567 27.433 14 25.5 14C23.567 14 22 15.567 22 17.5L22 24.5C22 26.433 23.567 28 25.5 28ZM25.5 38C27.433 38 29 36.433 29 34.5C29 32.567 27.433 31 25.5 31C23.567 31 22 32.567 22 34.5C22 36.433 23.567 38 25.5 38Z' fill='%23EF4461'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_25_16'%3E%3Crect width='35' height='35' fill='white' transform='translate(25.5 0.751251) rotate(45)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+            color: var(--at-red-500);
+        }
+    }
+    &[at-status="warning"]{
+        .at-dialog-icon{
+            background-color: var(--at-amber-transparent);
+            background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.9336 4.44624C19.3813 1.84889 15.6187 1.84889 14.0665 4.44624L1.36581 25.698C-0.227591 28.3642 1.69331 31.75 4.79937 31.75H30.2007C33.3067 31.75 35.2276 28.3642 33.6342 25.698L20.9336 4.44624ZM17.5 20.1067C19.0361 20.1067 20.2813 18.9137 20.2813 17.4422L20.2813 12.1131C20.2813 10.6415 19.0361 9.44859 17.5 9.44859C15.964 9.44859 14.7187 10.6415 14.7187 12.1131L14.7187 17.4422C14.7187 18.9137 15.9639 20.1067 17.5 20.1067ZM17.5 27.7196C19.0361 27.7196 20.2813 26.5267 20.2813 25.0551C20.2813 23.5835 19.0361 22.3906 17.5 22.3906C15.9639 22.3906 14.7187 23.5835 14.7187 25.0551C14.7187 26.5267 15.9639 27.7196 17.5 27.7196Z' fill='%23F59E0B'/%3E%3C/svg%3E%0A");
+            color: var(--at-amber-500);
+        }
+    }
+    &[at-status="info"]{
+        .at-dialog-icon{
+            background-color: var(--at-primary-transparent);
+            color: var(--at-primary-500);
+            background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 0C4.47715 0 0 4.47715 0 10V25C0 30.5228 4.47715 35 10 35H25C30.5228 35 35 30.5228 35 25V10C35 4.47715 30.5228 0 25 0H10ZM17.5 5C15.567 5 14 6.567 14 8.5C14 10.433 15.567 12 17.5 12C19.433 12 21 10.433 21 8.5C21 6.567 19.433 5 17.5 5ZM17.5 15C15.567 15 14 16.567 14 18.5V25.5C14 27.433 15.567 29 17.5 29C19.433 29 21 27.433 21 25.5V18.5C21 16.567 19.433 15 17.5 15Z' fill='%230066FF'/%3E%3C/svg%3E%0A");
+        }
+    }
+}
+.at-loading{
+    position: fixed;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    z-index: 9999999999999999999999999999;
+    background: rgba(17, 34, 51, 0.6);
+    backdrop-filter: blur(5px);
+    transition: 300ms;
+    visibility: hidden;
+    opacity: 0;
+    .at-loading-container{
+        .at-loading-animation{
+            position: relative;
+            margin: 0px auto;
+            height: 45px;
+            margin-bottom: 20px;
+            &::before{
+                position:absolute;
+                top:50%; left: 50%;
+                transform : translate(-50%, -50%);
+                display: block;
+                content: ""; 
+                background-repeat: no-repeat;
+                animation: at-spin linear 1.5s infinite;
+                background-image: url("data:image/svg+xml,%3Csvg width='45' height='45' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M10 0C8.02219 0 6.08879 0.58649 4.4443 1.6853C2.79981 2.78412 1.51809 4.3459 0.761209 6.17317C0.00433284 8.00043 -0.193701 10.0111 0.192152 11.9509C0.578004 13.8907 1.53041 15.6725 2.92894 17.0711C4.32746 18.4696 6.10929 19.422 8.0491 19.8079C9.98891 20.1937 11.9996 19.9957 13.8268 19.2388C15.6541 18.4819 17.2159 17.2002 18.3147 15.5557C19.4135 13.9112 20 11.9778 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7363 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM10 18C8.41775 18 6.87104 17.5308 5.55544 16.6518C4.23985 15.7727 3.21447 14.5233 2.60897 13.0615C2.00347 11.5997 1.84504 9.99113 2.15372 8.43928C2.4624 6.88743 3.22433 5.46197 4.34315 4.34315C5.46197 3.22433 6.88743 2.4624 8.43928 2.15372C9.99113 1.84504 11.5997 2.00346 13.0615 2.60896C14.5233 3.21447 15.7727 4.23984 16.6518 5.55544C17.5308 6.87103 18 8.41775 18 10C18 12.1217 17.1572 14.1566 15.6569 15.6569C14.1566 17.1571 12.1217 18 10 18Z' fill='white'/%3E%3Cpath d='M18 10H20C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0V2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10Z' fill='white'/%3E%3C/svg%3E%0A");
+                width: 45px;
+                height: 45px;
+            }
+        }
+        position:absolute;
+        text-align: center;
+        top:50%; left: 50%;
+        transform : translate(-50%, -50%);
+    }
+    &[at-active]{
+        visibility: visible;
+        opacity: 1;
     }
 }
