@@ -1339,3 +1339,34 @@
         opacity: 1;
     }
 }
+.at-context-menu{
+    background-color: var(--at-slate-900);
+    width: 235px;
+    padding: 5px;
+    border-radius: 10px;
+    user-select: none;
+    border: solid var(--at-border-size) var(--at-slate);
+    position:absolute;
+    .at-context-menu-header{
+        padding: 10px;
+    }
+    .at-context-menu-items{
+        border-top: solid 1px var(--at-slate);
+        margin-top: 5px;
+        padding-top: 5px;
+        .at-context-menu-item{
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 12px;
+            i{
+                vertical-align: middle;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+            &:hover{
+                background-color: var(--at-slate-transparent);
+            }
+        }
+    }
+}
