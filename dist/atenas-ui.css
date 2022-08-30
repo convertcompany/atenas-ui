@@ -247,9 +247,22 @@
   --at-bg-color: #FFFFFF;
   --at-title-color: #112233;
   --at-subtitle-color: #95A7B8;
+  --at-backdrop-color: #11223399;
+  --at-context-menu-background: var(--at-slate-900);
+  --at-context-menu-background-hover: var(--at-slate);
   --at-border-size: 2px;
   --at-border-radius: 6px;
+  --at-border-radius-l: 10px;
+  --at-border-radius-xl: 14px;
+  --at-border-radius-xxl: 20px;
+  --at-border-radius-xxxl: 50px;
   --at-font-size: 14px;
+  --at-font-size-h1: 10px;
+  --at-font-size-h2: 10px;
+  --at-font-size-h3: 10px;
+  --at-font-size-h4: 10px;
+  --at-font-size-h5: 10px;
+  --at-font-size-h6: 10px;
   --at-font-family: "Poppins";
   /* Definindo tema primario */
   --at-primary-50: var(--at-blue-50);
@@ -708,7 +721,7 @@ body select option {
 .at-fieldset {
   border: solid var(--at-border-size) var(--at-slate);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
 }
 .at-fieldset legend {
   font-weight: 700;
@@ -1004,7 +1017,7 @@ body select option {
   right: 0px;
   bottom: 0px;
   z-index: 9999999999999999999999999999;
-  background: rgba(17, 34, 51, 0.6);
+  background: var(--at-backdrop-color);
   backdrop-filter: blur(5px);
   transition: visibility 0.3s linear 300ms, opacity 300ms;
   visibility: hidden;
@@ -1020,7 +1033,7 @@ body select option {
   top: -150%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   overflow-y: scroll;
   max-height: 80vh;
   border: solid 1px var(--at-slate);
@@ -1056,7 +1069,7 @@ body select option {
   width: 22px;
   height: 4px;
   background-color: var(--at-subtitle-color);
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   top: 8px;
 }
 .at-close:before {
@@ -1098,12 +1111,12 @@ body select option {
 .at-card {
   padding: 20px;
   background-color: var(--at-bg-color);
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   margin: 10px;
 }
 .at-card img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
 }
 .at-card .at-card-image {
   width: calc(100% + 40px);
@@ -1119,7 +1132,7 @@ body select option {
   width: 40px;
   height: 40px;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
   position: relative;
   vertical-align: middle;
   margin-right: 5px;
@@ -1136,7 +1149,7 @@ body select option {
 }
 .at-profile .at-profile-avatar img {
   background-color: #FFF;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
   width: 100%;
   position: absolute;
   top: 50%;
@@ -1175,7 +1188,7 @@ body select option {
   min-width: 300px;
   user-select: none;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
   padding: 0px 10px;
   overflow: hidden;
   border: solid 1px var(--at-slate);
@@ -1186,7 +1199,7 @@ body select option {
   height: 40px;
   vertical-align: middle;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
   position: relative;
   background: var(--at-slate);
   background-position: center;
@@ -1221,7 +1234,7 @@ body select option {
   width: 10px;
   height: 1.2px;
   background-color: var(--at-subtitle-color);
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   top: 5px;
 }
 .at-alert .at-alert-close:before {
@@ -1571,7 +1584,7 @@ body select option {
   user-select: none;
   padding: 12.5px 15px;
   padding-right: 35px;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
   font-size: var(--at-font-size);
   transition: 0.5s all ease;
   background: #000000;
@@ -1615,7 +1628,7 @@ body select option {
   width: 10px;
   height: 1.2px;
   background-color: currentColor;
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   opacity: 0.5;
 }
 .at-toast .at-toast-close:before {
@@ -1637,7 +1650,7 @@ body select option {
   right: 0px;
   bottom: 0px;
   z-index: 9999999999999999999999999999;
-  background: rgba(17, 34, 51, 0.6);
+  background: var(--at-backdrop-color);
   backdrop-filter: blur(5px);
   transition: 200ms;
   visibility: hidden;
@@ -1646,13 +1659,13 @@ body select option {
 .at-dialog .at-dialog-container {
   transition: 200ms all ease;
   background-color: var(--at-bg-color);
-  min-width: 200px;
-  max-width: 350px;
+  min-width: 300px;
+  max-width: 400px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.05);
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   max-height: 80vh;
   border: solid 1px var(--at-slate);
   text-align: center;
@@ -1676,7 +1689,7 @@ body select option {
   width: 10px;
   height: 1.2px;
   background-color: currentColor;
-  border-radius: 12px;
+  border-radius: var(--at-border-radius-xl);
   opacity: 0.5;
 }
 .at-dialog .at-dialog-container .at-dialog-close:before {
@@ -1698,7 +1711,7 @@ body select option {
 .at-dialog .at-dialog-container .at-dialog-icon {
   width: 50px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: var(--at-border-radius-l);
   position: relative;
   background: var(--at-slate);
   background-position: center;
@@ -1748,7 +1761,7 @@ body select option {
   right: 0px;
   bottom: 0px;
   z-index: 9999999999999999999999999999;
-  background: rgba(17, 34, 51, 0.6);
+  background: var(--at-backdrop-color);
   backdrop-filter: blur(5px);
   transition: 300ms;
   visibility: hidden;
@@ -1783,6 +1796,34 @@ body select option {
 .at-loading[at-active] {
   visibility: visible;
   opacity: 1;
+}
+.at-context-menu {
+  background-color: var(--at-context-menu-background);
+  width: 235px;
+  padding: 5px;
+  border-radius: var(--at-border-radius-l);
+  user-select: none;
+  border: solid var(--at-border-size) var(--at-slate);
+  position: absolute;
+}
+.at-context-menu .at-context-menu-header {
+  padding: 10px;
+  border-bottom: solid 1px var(--at-slate);
+  margin-bottom: 5px;
+}
+.at-context-menu .at-context-menu-items .at-context-menu-item {
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.at-context-menu .at-context-menu-items .at-context-menu-item i {
+  vertical-align: middle;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.at-context-menu .at-context-menu-items .at-context-menu-item:hover {
+  background-color: var(--at-context-menu-background-hover);
 }
 /* Atenas UI by Convert Company | v1.0.5 | MIT License | https://github.com/convertcompany/atenas-ui/ */
 /* Esse arquivo é o responsável pela gerencia total dos estilos e importações do Atenas UI */
@@ -4746,7 +4787,7 @@ body select option {
   background-size: 100% 3px;
 }
 [at-shadow] {
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04) !important;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 [at-shadow][at-shadow="small"] {
   box-shadow: rgba(20, 30, 40, 0.1) 0px 1px 3px 0px, rgba(20, 30, 40, 0.06) 0px 1px 2px 0px;

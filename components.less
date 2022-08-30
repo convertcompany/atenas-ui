@@ -282,7 +282,7 @@
 .at-fieldset{
     border: solid var(--at-border-size) var(--at-slate);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--at-border-radius-l);
     legend{
         font-weight: 700;
         font-size: 24px;
@@ -566,7 +566,7 @@
     position: fixed;
     top: 0px; left: 0px; right: 0px; bottom: 0px;
     z-index: 9999999999999999999999999999;
-    background: rgba(17, 34, 51, 0.6);
+    background: var(--at-backdrop-color);
     backdrop-filter: blur(5px);
     transition: visibility 0.3s linear 300ms, opacity 300ms;
     visibility: hidden;
@@ -580,7 +580,7 @@
         position:absolute;
         top:-150%; left: 50%;
         transform : translate(-50%, -50%);
-        border-radius: 12px;
+        border-radius: var(--at-border-radius-xl);
         overflow-y: scroll;
         max-height: 80vh;
         border: solid 1px var(--at-slate);
@@ -615,7 +615,7 @@
         width:22px;
         height:4px;
         background-color:var(--at-subtitle-color);
-        border-radius:12px;
+        border-radius:var(--at-border-radius-xl);
         top:8px;
     }
     
@@ -660,11 +660,11 @@
 .at-card{
     padding: 20px;
     background-color: var(--at-bg-color);
-    border-radius: 12px;
+    border-radius: var(--at-border-radius-xl);
     margin: 10px;
     img{
         width: 100%;
-        border-radius: 12px;
+        border-radius: var(--at-border-radius-xl);
     }
     .at-card-image{
         width: calc(100% + 40px);
@@ -680,7 +680,7 @@
         width: 40px;
         height: 40px;
         display: inline-block;
-        border-radius: 10px;
+        border-radius: var(--at-border-radius-l);
         position: relative;
         vertical-align: middle;
         margin-right: 5px;
@@ -697,7 +697,7 @@
         }
         img{
             background-color: #FFF;
-            border-radius: 10px;
+            border-radius: var(--at-border-radius-l);
             width: 100%;
             position:absolute;
             top:50%; left: 50%;
@@ -736,7 +736,7 @@
     min-width: 300px;
     user-select: none;
     cursor: pointer;
-    border-radius:10px;
+    border-radius:var(--at-border-radius-l);
     padding: 0px 10px;
     overflow: hidden;
     border: solid 1px var(--at-slate);
@@ -746,7 +746,7 @@
         height: 40px;
         vertical-align: middle;
         display: inline-block;
-        border-radius: 10px;
+        border-radius: var(--at-border-radius-l);
         position: relative;
         background: var(--at-slate);
         background-position: center;
@@ -777,7 +777,7 @@
             width:10px;
             height:1.2px;
             background-color:var(--at-subtitle-color);
-            border-radius:12px;
+            border-radius:var(--at-border-radius-xl);
             top:5px;
         }
         
@@ -1137,7 +1137,7 @@
     user-select: none;
     padding: 12.5px 15px;
     padding-right: 35px;
-    border-radius: 10px;
+    border-radius: var(--at-border-radius-l);
     font-size: var(--at-font-size);
     transition: 0.5s all ease;
     background: #000000;
@@ -1170,7 +1170,7 @@
             width:10px;
             height:1.2px;
             background-color: currentColor;
-            border-radius:12px;
+            border-radius:var(--at-border-radius-xl);
             opacity: 0.5;
         }
         
@@ -1192,7 +1192,7 @@
     position: fixed;
     top: 0px; left: 0px; right: 0px; bottom: 0px;
     z-index: 9999999999999999999999999999;
-    background: rgba(17, 34, 51, 0.6);
+    background: var(--at-backdrop-color);
     backdrop-filter: blur(5px);
     transition: 200ms;
     visibility: hidden;
@@ -1200,12 +1200,12 @@
     .at-dialog-container{
         transition: 200ms all ease;
         background-color: var(--at-bg-color);
-        min-width: 200px;
-        max-width: 350px;
+        min-width: 300px;
+        max-width: 400px;
         position:absolute;
         top:50%; left: 50%;
         transform : translate(-50%, -50%) scale(0.05);
-        border-radius: 12px;
+        border-radius: var(--at-border-radius-xl);
         max-height: 80vh;
         border: solid 1px var(--at-slate);
         text-align: center;
@@ -1225,7 +1225,7 @@
                 width:10px;
                 height:1.2px;
                 background-color: currentColor;
-                border-radius:12px;
+                border-radius:var(--at-border-radius-xl);
                 opacity: 0.5;
             }
             
@@ -1249,7 +1249,7 @@
         .at-dialog-icon{
             width: 50px;
             height: 50px;
-            border-radius: 10px;
+            border-radius: var(--at-border-radius-l);
             position: relative;
             background: var(--at-slate);
             background-position: center;
@@ -1305,7 +1305,7 @@
     position: fixed;
     top: 0px; left: 0px; right: 0px; bottom: 0px;
     z-index: 9999999999999999999999999999;
-    background: rgba(17, 34, 51, 0.6);
+    background: var(--at-backdrop-color);
     backdrop-filter: blur(5px);
     transition: 300ms;
     visibility: hidden;
@@ -1340,20 +1340,19 @@
     }
 }
 .at-context-menu{
-    background-color: var(--at-slate-900);
+    background-color: var(--at-context-menu-background);
     width: 235px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--at-border-radius-l);
     user-select: none;
     border: solid var(--at-border-size) var(--at-slate);
     position:absolute;
     .at-context-menu-header{
         padding: 10px;
+        border-bottom: solid 1px var(--at-slate);
+        margin-bottom: 5px;
     }
     .at-context-menu-items{
-        border-top: solid 1px var(--at-slate);
-        margin-top: 5px;
-        padding-top: 5px;
         .at-context-menu-item{
             padding: 8px;
             cursor: pointer;
@@ -1365,7 +1364,7 @@
                 margin-right: 10px;
             }
             &:hover{
-                background-color: var(--at-slate-transparent);
+                background-color: var(--at-context-menu-background-hover);
             }
         }
     }

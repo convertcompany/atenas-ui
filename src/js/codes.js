@@ -2,9 +2,9 @@ const codes = {
     installation : {
         add : 
             `<!-- Carregando atenas remotamente via CDN -->\n`+
-            `<link rel="stylesheet" type="text/css" href="https://atenas.convert.app.br/dist/atenas.min.css"/>\n`+
+            `<link rel="stylesheet" type="text/css" href="https://atenas.convert.app.br/dist/atenas-ui.min.css"/>\n`+
             `<!-- Carregando atenas localmente -->\n`+
-            `<link rel="stylesheet" type="text/css" href="../../css/atenas.min.css"/>`,
+            `<link rel="stylesheet" type="text/css" href="../css/atenas-ui.min.css"/>`,
         extra : 
             `<!-- Carregando fonte Poppins via Google Fonts -->\n`+
             `<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>\n`+
@@ -13,13 +13,13 @@ const codes = {
             `<!-- Carregando icones da biblioteca Box Icons -->\n`+
             `<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>\n`,
         done : 
-            `<!-- Criando um botão com atenas ui -->\n`+
+            `<!-- Criando um botão com Atenas UI -->\n`+
             `<button class="at-button" at-bg="primary">Hello World!</button>\n`
     },
     css : {
         darkmodecss: 
         `[at-dark] .button-toggle{\n`+
-        `    background: var(--at-amber-400);\n`+
+        `    background-color: var(--at-amber-400);\n`+
         `    color: #FFF;\n`+
         `}\n`,
         darkmode: 

@@ -22,8 +22,8 @@ body{
     height: 15px;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 2px;
-    border: solid 1px #95a7b878;
+    border-radius: 60px;
+    border: solid 1px #FFFFFF2c;
     user-select: none;
     transition: .2s;
 }
@@ -67,7 +67,7 @@ body{
 } 
  
 [at-dark] .button-toggle{
-    background: var(--at-amber-400);
+    background: var(--at-amber-400) !important;
     color: #FFF;
 }
 
